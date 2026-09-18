@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Private Client Suite | Elite Force | Proposal by Sidedoor Digital</title>
+<meta name="description" content="A confidential proposal for the Elite Force Private Client Suite: a secure client portal, encrypted messaging and a live threat dashboard, designed and built by Sidedoor Digital.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#050505">
+<meta property="og:title" content="Elite Force Private Client Suite | Proposal">
+<meta property="og:description" content="Secure portal, encrypted messaging and live threat dashboard for Elite Force clients.">
+<meta property="og:image" content="https://www.YOURDOMAIN.co.uk/assets/og-image.jpg">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=Marcellus&display=swap">
+<link rel="stylesheet" href="/assets/site.css">
+<link rel="stylesheet" href="/assets/suite.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header is-solid">
+  <div class="wrap header-inner">
+    <a class="brand" href="/" aria-label="Elite Force home"><img src="/assets/wordmark.webp" alt="Elite Force" width="1200" height="194"></a>
+    <span class="prepared">Prepared by <a href="https://getsidedoor.co.uk" rel="noopener">Sidedoor Digital</a></span>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="s-hero">
+    <img class="s-lion" src="/assets/lion.webp" alt="" width="547" height="655">
+    <div class="wrap">
+      <span class="note">Confidential proposal for Elite Force</span>
+      <h1>The Elite Force Private Client Suite</h1>
+      <p class="lead">Three digital services that turn one-off security and recovery jobs into monthly retainers. Designed, built and run by Sidedoor Digital, branded entirely as Elite Force.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap idea">
+      <h2>The idea</h2>
+      <div>
+        <p><strong>Wealthy clients do not just want a team to turn up. They want to see that they are protected.</strong> At the moment most security firms send a PDF once a week and a debt update when someone chases it.</p>
+        <p>The Private Client Suite gives every Elite Force client something to open on their phone: their threat level, where their team is, how much of their money has been recovered and a direct, encrypted line to their account director.</p>
+        <p>That visibility is what justifies a monthly fee. It is also what makes clients stay, because once their family, properties and cases live inside Elite Force, moving to another firm means starting again.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+
+    <!-- 1. Portal -->
+    <section class="product" aria-labelledby="p1">
+      <div class="product-copy">
+        <h2 id="p1">Private client portal</h2>
+        <p>A members-only app and web portal where clients see their live threat assessment, track debt recovery and request help in an emergency. Dark, simple and fast, with nothing to learn.</p>
+        <ul class="feature-list">
+          <li><strong>Face ID and fingerprint sign-in</strong> using passkeys, so there are no passwords to steal or forget.</li>
+          <li><strong>Zero-knowledge storage.</strong> Case notes and documents are encrypted on the client's device before upload, so not even the hosting provider can read them.</li>
+          <li><strong>Live recovery tracking</strong> for every case: amount owed, amount recovered and the next action.</li>
+          <li><strong>Emergency extraction request</strong> with a press-and-hold button that alerts the duty team with the client's location.</li>
+          <li><strong>Installs like an app</strong> on iPhone and Android, with no App Store approval needed.</li>
+        </ul>
+      </div>
+      <div class="phone" id="portal-phone">
+        <div class="screen">
+          <div class="notch"></div>
+          <div class="status-bar"><span>09:41</span><span>5G</span></div>
+          <div class="lock">
+            <img src="/assets/wordmark.webp" alt="Elite Force" width="1200" height="194">
+            <p>Private client portal</p>
+            <div class="scan" aria-hidden="true"></div>
+            <button class="face-btn" type="button" id="face-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 8V5a2 2 0 0 1 2-2h3M16 3h3a2 2 0 0 1 2 2v3M21 16v3a2 2 0 0 1-2 2h-3M8 21H5a2 2 0 0 1-2-2v-3M9 9v1M15 9v1M12 9v4h-1M9 16c1.8 1.3 4.2 1.3 6 0"/></svg>
+              Unlock with Face ID
+            </button>
+            <p style="font-size:11px">Tap to try the demo</p>
+          </div>
+          <div class="dash" aria-live="polite">
+            <div class="dash-head"><img src="/assets/wordmark.webp" alt="Elite Force" width="1200" height="194"><span>Good morning, Mr H.</span></div>
+            <div class="tile">
+              <small>Current threat level</small>
+              <div class="level big"><i></i>Low</div>
+            </div>
+            <div class="row2">
+              <div class="tile"><small>Team on duty</small><div class="big">3</div></div>
+              <div class="tile"><small>Next review</small><div class="big">14 Oct</div></div>
+            </div>
+            <div class="tile">
+              <small>Recovery case EF-0412</small>
+              <div class="big">&pound;340,000 <span style="font-size:13px;color:var(--stone)">of &pound;500,000</span></div>
+              <div class="bar"><b style="width:68%"></b></div>
+            </div>
+            <div class="tile">
+              <small>Latest update</small>
+              Residential audit complete at Alderley Edge. Two recommendations sent for approval.
+            </div>
+            <button class="hold" type="button" id="hold-btn"><span>Hold to request extraction</span></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Messaging -->
+    <section class="product flip" aria-labelledby="p2">
+      <div class="phone">
+        <div class="screen">
+          <div class="notch"></div>
+          <div class="status-bar"><span>22:17</span><span>5G</span></div>
+          <div class="chat">
+            <div class="chat-head"><span class="av" aria-hidden="true"></span><div><b>Elite Force Operations</b><small>Verified. End-to-end encrypted</small></div></div>
+            <div class="msgs">
+              <span class="sys">Messages in this chat delete after 24 hours</span>
+              <div class="msg in">Evening Mr H. Your driver is 6 minutes out, silver Range Rover, registration sent separately.<time>22:09</time></div>
+              <div class="msg out">Thanks. Can we go via the rear entrance tonight?<time>22:11</time></div>
+              <div class="msg in">Confirmed. Rear gate, second team member will meet you inside the lobby.<time>22:12</time></div>
+              <div class="msg in">Arriving now.<time>22:17</time></div>
+            </div>
+            <div class="compose"><span>Encrypted message</span><span>Send</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="product-copy">
+        <h2 id="p2">Encrypted messaging</h2>
+        <p>A private, Elite Force branded messenger for clients, their families and the operations team. No personal numbers, no WhatsApp groups, nothing on anyone else's servers.</p>
+        <ul class="feature-list">
+          <li><strong>End-to-end encrypted</strong> messages, calls and file sharing, built on the open Matrix standard used by governments and defence organisations.</li>
+          <li><strong>Hosted in the UK</strong> on Elite Force's own server, so the company controls every message and every account.</li>
+          <li><strong>Disappearing messages</strong> and remote sign-out if a phone is lost or a staff member leaves.</li>
+          <li><strong>Optional hardened handsets</strong> for top-tier clients, supplied through a specialist partner and set up before they are handed over.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 3. Dashboard -->
+    <section class="product wide" aria-labelledby="p3">
+      <div class="wide-copy">
+        <h2 id="p3">Live threat dashboard</h2>
+        <div class="product-copy">
+          <p>Instead of a weekly PDF, top clients get a live, interactive map of everything they own and everything they are owed. Properties, vessels and holdings, known risk areas, and the real-time status of every debt Elite Force is recovering for them.</p>
+          <ul class="feature-list">
+            <li><strong>Every asset on one map</strong>, with its security status and the last time it was checked.</li>
+            <li><strong>Risk areas</strong> updated by the Elite Force team, with travel advice attached.</li>
+            <li><strong>Debt portfolio view</strong> showing the total owed, total recovered and each case's stage.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="browser" role="img" aria-label="Example threat dashboard showing a client's assets on a map, a risk area and debt recovery totals">
+        <div class="browser-bar"><i></i><i></i><i></i><span>portal.elite-force / dashboard</span></div>
+        <div class="board">
+          <div class="map">
+            <svg class="land" viewBox="0 0 800 440" preserveAspectRatio="none" aria-hidden="true">
+              <g fill="none" stroke="rgba(185,151,91,.22)">
+                <circle cx="300" cy="140" r="60"/><circle cx="300" cy="140" r="140"/><circle cx="300" cy="140" r="240"/>
+              </g>
+              <g stroke="rgba(185,151,91,.35)" stroke-dasharray="3 5">
+                <line x1="300" y1="140" x2="264" y2="114"/><line x1="300" y1="140" x2="352" y2="198"/><line x1="300" y1="140" x2="368" y2="229"/><line x1="300" y1="140" x2="656" y2="308"/>
+              </g>
+            </svg>
+            <span class="zone" style="left:82%;top:70%;width:150px;height:150px"></span>
+            <div class="pin" style="left:37.5%;top:31.8%"><i></i>London residence</div>
+            <div class="pin" style="left:33%;top:26%"><i></i>Cheshire estate</div>
+            <div class="pin" style="left:44%;top:45%"><i></i>Geneva holdings</div>
+            <div class="pin" style="left:46%;top:52%"><i></i>Monaco berth</div>
+            <div class="pin warn" style="left:82%;top:70%"><i></i>Dubai apartment</div>
+            <div class="map-key"><span>Rings: distance from London HQ</span><span class="amber">Dashed area: elevated risk</span></div>
+          </div>
+          <div class="side">
+            <h3>Assets</h3>
+            <div class="asset"><span>London residence</span><em class="ok">Secure</em></div>
+            <div class="asset"><span>Cheshire estate</span><em class="ok">Secure</em></div>
+            <div class="asset"><span>Monaco berth</span><em class="ok">Checked 2h ago</em></div>
+            <div class="asset"><span>Dubai apartment</span><em class="amber">Advisory</em></div>
+            <h3>Debt portfolio</h3>
+            <div><span class="debt-total">&pound;1.84m</span> <span style="color:var(--stone)">recovered of &pound;2.60m</span></div>
+            <div class="bar"><b style="width:71%"></b></div>
+            <div class="asset"><span>4 cases active</span><span style="color:var(--stone)">1 at enforcement</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section class="section process" aria-labelledby="tiers-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="tiers-title">How Elite Force sells it</h2>
+        <p class="lead">Three membership tiers, paid monthly. Each one bundles a level of digital access with ongoing security and recovery work, so clients are paying for peace of mind rather than individual jobs. Suggested prices below, set by Elite Force.</p>
+      </div>
+      <div class="tiers">
+        <article class="tier">
+          <h3>Guardian</h3>
+          <p class="who">For private clients who want visibility and a direct line.</p>
+          <p class="price">&pound;1,500 <small>per month</small></p>
+          <ul>
+            <li><strong>Private client portal</strong></li>
+            <li>Encrypted messaging for 2 people</li>
+            <li>Live debt recovery tracking</li>
+            <li>Quarterly risk review</li>
+            <li>Priority response line</li>
+          </ul>
+        </article>
+        <article class="tier feature">
+          <h3>Sovereign</h3>
+          <p class="who">For families and principals with property and people to protect.</p>
+          <p class="price">&pound;4,500 <small>per month</small></p>
+          <ul>
+            <li>Everything in Guardian</li>
+            <li><strong>Live threat dashboard</strong></li>
+            <li>Encrypted messaging for the whole household</li>
+            <li>Emergency extraction request</li>
+            <li>Dedicated account director</li>
+            <li>Annual residential security audit</li>
+          </ul>
+        </article>
+        <article class="tier">
+          <h3>Crown</h3>
+          <p class="who">For principals with international assets and a permanent need.</p>
+          <p class="price">From &pound;12,000 <small>per month</small></p>
+          <ul>
+            <li>Everything in Sovereign</li>
+            <li><strong>Hardened encrypted handsets</strong> for the family</li>
+            <li>Global asset map with travel risk updates</li>
+            <li>Duty team on call around the clock</li>
+            <li>By invitation only</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="calc" aria-labelledby="calc-title">
+        <div>
+          <h3 id="calc-title" style="margin-bottom:24px">What it could be worth each month</h3>
+          <div class="slider"><label for="c-g">Guardian clients <output id="o-g" for="c-g">10</output></label><input id="c-g" type="range" min="0" max="50" value="10" data-price="1500"></div>
+          <div class="slider"><label for="c-s">Sovereign clients <output id="o-s" for="c-s">4</output></label><input id="c-s" type="range" min="0" max="25" value="4" data-price="4500"></div>
+          <div class="slider"><label for="c-c">Crown clients <output id="o-c" for="c-c">1</output></label><input id="c-c" type="range" min="0" max="10" value="1" data-price="12000"></div>
+        </div>
+        <div class="mrr" aria-live="polite">
+          <small>Recurring income per month</small>
+          <div class="n" id="mrr">&pound;45,000</div>
+          <small>Per year</small>
+          <div class="n sub" id="arr">&pound;540,000</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="build-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="build-title">What it costs to build</h2>
+        <p class="lead">Each part can be built on its own or as one suite. Running costs cover hosting, security updates, monitoring and support, so Elite Force never has to manage the technology.</p>
+      </div>
+      <div class="table-wrap">
+        <table class="price-table">
+          <thead><tr><th scope="col">Service</th><th scope="col">Build</th><th scope="col">Running cost</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Private client portal</strong>Passkey sign-in, encrypted documents, recovery tracking, extraction request, installable app.</td><td class="num">&pound;7,500</td><td class="num">&pound;395 <span style="font-size:14px;color:var(--stone)">/ month</span></td></tr>
+            <tr><td><strong>Encrypted messaging</strong>Branded messenger on a UK-hosted private server, staff and client accounts, remote sign-out.</td><td class="num">&pound;2,950</td><td class="num">&pound;35 <span style="font-size:14px;color:var(--stone)">per user / month</span></td></tr>
+            <tr><td><strong>Live threat dashboard</strong>Asset map, risk areas, debt portfolio view and a simple admin screen for the Elite Force team to keep it up to date.</td><td class="num">&pound;5,950</td><td class="num">&pound;295 <span style="font-size:14px;color:var(--stone)">/ month</span></td></tr>
+            <tr class="bundle"><td><strong>Full Private Client Suite</strong>All three, sharing one sign-in and one admin area. Saves &pound;1,900 on the build.</td><td class="num">&pound;14,500</td><td class="num">&pound;650 <span style="font-size:14px;color:var(--stone)">/ month + users</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="fine">Hardened handsets are supplied through a specialist partner and priced per device. An independent penetration test before launch is recommended and quoted separately. All prices exclude VAT.</p>
+
+      <h3 style="margin:72px 0 28px">How it would be delivered</h3>
+      <ol class="phases">
+        <li><strong>Weeks 1 to 4.</strong> Client portal with passkey sign-in and recovery tracking, tested with two or three existing clients.</li>
+        <li><strong>Weeks 5 to 7.</strong> Encrypted messaging set up on a UK server, staff onboarded, first clients invited.</li>
+        <li><strong>Weeks 8 to 11.</strong> Live threat dashboard, admin screen for the team, then the tiers go on sale.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="close-cta">
+    <div class="wrap">
+      <h2>One portal subscription covers the build within months</h2>
+      <p class="lead">Two Sovereign clients pay for the full suite in under two months. Everything after that is margin, and every client inside the portal is a client who is far less likely to leave.</p>
+      <a class="btn btn-gold" href="https://getsidedoor.co.uk" rel="noopener">Talk it through with Sidedoor Digital</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-base" style="margin-top:0;border-top:0;padding-top:0">
+    <span>Confidential. Prepared for Elite Force by Sidedoor Digital. Figures shown in the demos are examples only.</span>
+    <span>Intellectual property of <a href="https://getsidedoor.co.uk" rel="noopener">Sidedoor Digital</a></span>
+  </div>
+</footer>
+
+<script src="/assets/suite.js" defer></script>
+</body>
+</html>
