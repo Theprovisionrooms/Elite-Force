@@ -9,6 +9,9 @@
 /assets/*
   Cache-Control: public, max-age=604800
 
+/assets/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+
 /digital-suite
   X-Robots-Tag: noindex, nofollow
 /digital-suite.html
