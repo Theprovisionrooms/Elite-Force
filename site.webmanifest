@@ -1,9 +1,13 @@
 {
   "name": "Elite Force",
   "short_name": "Elite Force",
+  "description": "Private security and debt recovery for high net worth clients across the UK.",
+  "start_url": "/",
+  "scope": "/",
   "icons": [
-    { "src": "/assets/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" },
-    { "src": "/assets/icon-512.png", "sizes": "512x512", "type": "image/png" }
+    { "src": "/assets/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/assets/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/assets/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
   ],
   "theme_color": "#070605",
   "background_color": "#070605",

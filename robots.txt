@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.YOURDOMAIN.co.uk/sitemap.xml
+Sitemap: https://eliteforce.site/sitemap.xml
