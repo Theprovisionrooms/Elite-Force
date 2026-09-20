@@ -67,7 +67,7 @@
 .dash-head span { font-size: 11px; color: var(--stone); }
 .tile { background: #0e0d0b; border: 1px solid rgba(185,151,91,.18); padding: 12px 14px; }
 .tile small { display: block; color: var(--stone); font-size: 11px; margin-bottom: 4px; }
-.tile .big { font-family: var(--display); font-size: 20px; }
+.tile .big { font-family: var(--display); font-weight: 500; font-size: 23px; }
 .level { display: flex; align-items: center; gap: 8px; }
 .level i { width: 9px; height: 9px; border-radius: 50%; background: #7fb48a; box-shadow: 0 0 8px #7fb48a; }
 .bar { height: 5px; background: #221f19; margin-top: 8px; }
@@ -119,7 +119,7 @@
 .asset { display: flex; justify-content: space-between; gap: 10px; padding: 9px 0; border-bottom: 1px solid var(--line-soft); }
 .asset em { font-style: normal; font-size: 11px; padding: 2px 8px; border: 1px solid; }
 .ok { color: #9fc8a8; } .amber { color: #e0a25a; }
-.debt-total { font-family: var(--display); font-size: 26px; color: var(--gold-light); }
+.debt-total { font-family: var(--display); font-weight: 500; font-size: 30px; color: var(--gold-light); }
 @media (max-width: 800px) { .board { grid-template-columns: 1fr; } .map { min-height: 340px; border-right: 0; border-bottom: 1px solid rgba(185,151,91,.18); } }
 
 /* Tiers */
@@ -129,7 +129,7 @@
 .tier.feature { background: linear-gradient(180deg, rgba(185,151,91,.1), transparent 60%); }
 .tier h3 { font-size: 28px; margin-bottom: 6px; }
 .tier .who { color: var(--stone); font-size: 15px; min-height: 48px; }
-.tier .price { font-family: var(--display); font-size: 34px; color: var(--gold-light); margin: 18px 0 2px; }
+.tier .price { font-family: var(--display); font-weight: 500; font-size: 40px; color: var(--gold-light); margin: 18px 0 2px; }
 .tier .price small { font-family: var(--body); font-size: 14px; color: var(--stone); }
 .tier ul { list-style: none; margin: 22px 0 0; padding: 0; }
 .tier li { padding: 10px 0; border-top: 1px solid var(--line-soft); font-size: 15px; color: var(--stone); }
@@ -140,7 +140,7 @@
 .calc { display: grid; grid-template-columns: 7fr 5fr; gap: 56px; align-items: center; margin-top: 72px; padding: 44px; border: 1px solid var(--line); background: var(--vault); }
 .slider { margin-bottom: 26px; }
 .slider label { display: flex; justify-content: space-between; font-size: 15px; margin-bottom: 10px; }
-.slider output { font-family: var(--display); color: var(--gold-light); font-size: 20px; }
+.slider output { font-family: var(--display); font-weight: 500; color: var(--gold-light); font-size: 23px; }
 .slider input { width: 100%; accent-color: var(--gold); height: 28px; }
 .mrr small { display: block; color: var(--stone); font-size: 14px; }
 .mrr .n { font-family: var(--display); font-size: clamp(40px, 5vw, 64px); color: var(--gold-light); line-height: 1.1; margin-bottom: 18px; }
@@ -151,9 +151,9 @@
 .price-table { width: 100%; border-collapse: collapse; font-size: 16px; }
 .price-table th, .price-table td { text-align: left; padding: 20px 16px 20px 0; border-top: 1px solid var(--line-soft); vertical-align: top; }
 .price-table thead th { font-size: 14px; color: var(--stone); font-weight: 600; border-top: 0; padding-bottom: 12px; }
-.price-table td:first-child strong { font-family: var(--display); font-weight: 400; font-size: 21px; color: var(--ivory); display: block; margin-bottom: 4px; }
+.price-table td:first-child strong { font-family: var(--display); font-weight: 500; font-size: 24px; color: var(--ivory); display: block; margin-bottom: 4px; }
 .price-table td { color: var(--stone); }
-.price-table .num { font-family: var(--display); font-size: 22px; color: var(--gold-light); white-space: nowrap; }
+.price-table .num { font-family: var(--display); font-weight: 500; font-size: 25px; color: var(--gold-light); white-space: nowrap; }
 .price-table tr.bundle td { border-top: 1px solid var(--gold); background: rgba(185,151,91,.07); }
 .price-table tr.bundle td:first-child { padding-left: 16px; }
 .table-wrap { overflow-x: auto; }
@@ -161,7 +161,7 @@
 
 .phases { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; counter-reset: ph; }
 .phases li { counter-increment: ph; border-top: 1px solid var(--gold); padding-top: 18px; color: var(--stone); font-size: 16px; }
-.phases li::before { content: "Phase " counter(ph); display: block; font-family: var(--display); color: var(--gold-light); font-size: 20px; margin-bottom: 6px; }
+.phases li::before { content: "Phase " counter(ph); display: block; font-family: var(--brand); color: var(--gold-light); font-size: 15px; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 6px; }
 .phases strong { color: var(--ivory); font-weight: 600; }
 @media (max-width: 800px) { .phases { grid-template-columns: 1fr; } }
 

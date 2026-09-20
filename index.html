@@ -33,10 +33,13 @@
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
 
-<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/cinzel-latin-500-normal.woff2" crossorigin>
-<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/hanken-grotesk-latin-400-normal.woff2" crossorigin>
-<link rel="preload" as="image" href="/assets/hero.webp" imagesrcset="/assets/hero-1600.webp 1600w, /assets/hero.webp 2560w" imagesizes="max(100vw, 150svh)" media="(min-width: 721px)" fetchpriority="high">
+<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/cormorant-garamond-latin-500-normal.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/archivo-latin-400-normal.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/cinzel-latin-400-normal.woff2" crossorigin>
+<link rel="preload" as="image" href="/assets/hero-1600.webp" imagesrcset="/assets/hero-1024.webp 1024w, /assets/hero-1600.webp 1600w, /assets/hero.webp 2560w" imagesizes="max(100vw, 150svh)" media="(min-width: 721px)" fetchpriority="high">
 <link rel="preload" as="image" href="/assets/hero-mobile.webp" media="(max-width: 720px)" fetchpriority="high">
+<link rel="preload" as="image" href="/assets/crest-hero.webp" imagesrcset="/assets/crest-hero-620.webp 620w, /assets/crest-hero.webp 1100w" imagesizes="clamp(182px, 37svh, 490px)" media="(min-width: 721px)" fetchpriority="high">
+<link rel="preload" as="image" href="/assets/crest-hero-620.webp" media="(max-width: 720px)" fetchpriority="high">
 <link rel="stylesheet" href="/assets/brochure.css">
 <script src="/assets/site.js"></script>
 
@@ -164,9 +167,12 @@
     <div class="cover-stage">
       <div class="cover-media">
         <picture>
-          <source media="(max-width: 720px)" srcset="/assets/hero-mobile.webp" width="1170" height="1427">
-          <img src="/assets/hero.webp" srcset="/assets/hero-1600.webp 1600w, /assets/hero.webp 2560w" sizes="max(100vw, 150svh)" alt="The Elite Force crest: a gold lion within a circle, flanked by a sword shield for security and a scales shield for debt collection, above the words Protection. Collection. Results. Around it, a close protection officer, black vehicles, a debt recovery folder stamped PAID and a protective vest." width="2560" height="1707" fetchpriority="high">
+          <source media="(max-width: 720px)" srcset="/assets/hero-mobile.webp" width="1120" height="1364">
+          <img src="/assets/hero-1600.webp" srcset="/assets/hero-1024.webp 1024w, /assets/hero-1600.webp 1600w, /assets/hero.webp 2560w" sizes="max(100vw, 150svh)" alt="Night in the city: a close protection officer watching the skyline, black vehicles waiting at the kerb and two operatives walking into a lit entrance." width="2560" height="1705" fetchpriority="high">
         </picture>
+      </div>
+      <div class="cover-crest">
+        <img src="/assets/crest-hero.webp" srcset="/assets/crest-hero-620.webp 620w, /assets/crest-hero.webp 1100w" sizes="(max-width: 720px) 76vw, clamp(182px, 37svh, 490px)" alt="The Elite Force crest: a gold lion within a circle, flanked by a sword shield for security and a scales shield for debt collection, above the words Elite Force, Protection. Collection. Results." width="1100" height="1390" fetchpriority="high">
         <span class="foil" aria-hidden="true"></span>
       </div>
     </div>
@@ -185,6 +191,18 @@
     </div>
   </section>
 
+  <!-- Standing details -->
+  <section class="rail" aria-label="How Elite Force works">
+    <div class="wrap">
+      <ul>
+        <li><b>Nationwide</b>England, Scotland, Wales and Northern Ireland</li>
+        <li><b>Two divisions</b>Protection and collection, under one director</li>
+        <li><b>One working day</b>Every enquiry answered personally</li>
+        <li><b>No publicity</b>No client names, no case studies, no exceptions</li>
+      </ul>
+    </div>
+  </section>
+
   <!-- Motto band -->
   <div class="motto" aria-hidden="true">
     <div class="motto-track">
@@ -196,7 +214,7 @@
   <!-- Introduction -->
   <section class="spread intro" id="intro" aria-labelledby="intro-title">
     <div class="wrap">
-      <p class="folio reveal"><span>Elite Force</span><span>Introduction</span></p>
+      <p class="folio reveal"><span>Elite Force</span><span>Introduction</span><span class="folio-num">01</span></p>
       <div class="intro-grid">
         <h2 id="intro-title" class="intro-statement reveal">Wealth attracts attention. We make sure it is only ever the right kind.</h2>
         <div class="intro-copy reveal" style="--d:1">
@@ -216,7 +234,7 @@
   <!-- Protection -->
   <section class="spread protection" id="protection" aria-labelledby="protection-title">
     <div class="wrap">
-      <p class="folio reveal"><span>Elite Force</span><span>Protection</span></p>
+      <p class="folio reveal"><span>Elite Force</span><span>Protection</span><span class="folio-num">02</span></p>
       <div class="spread-grid">
         <figure class="plate plate-tall">
           <div class="plate-img wipe"><img src="/assets/panel-protection.webp" alt="A close protection officer in a dark suit and earpiece looks out over a city skyline at night, black vehicles parked beside him." width="880" height="1426" loading="lazy" decoding="async"></div>
@@ -251,7 +269,7 @@
       <div class="plate-img wipe"><img class="parallax" src="/assets/panel-folder.webp" alt="A black debt recovery folder with a gold pen resting on a document stamped PAID." width="2000" height="789" loading="lazy" decoding="async"></div>
     </figure>
     <div class="wrap">
-      <p class="folio reveal"><span>Elite Force</span><span>Collection</span></p>
+      <p class="folio reveal"><span>Elite Force</span><span>Collection</span><span class="folio-num">03</span></p>
       <div class="spread-grid spread-grid-flip">
         <div class="spread-copy">
           <svg class="crest-icon reveal" viewBox="0 0 56 56" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
@@ -280,7 +298,7 @@
   <!-- Standard -->
   <section class="spread standard" aria-labelledby="standards-title">
     <div class="wrap">
-      <p class="folio reveal"><span>Elite Force</span><span>Our standard</span></p>
+      <p class="folio reveal"><span>Elite Force</span><span>Our standard</span><span class="folio-num">04</span></p>
       <div class="standard-grid">
         <div>
           <h2 id="standards-title" class="reveal">The standard we hold ourselves to</h2>
@@ -300,7 +318,7 @@
   <!-- Process -->
   <section class="spread process dark" id="process" aria-labelledby="process-title">
     <div class="wrap">
-      <p class="folio reveal"><span>Elite Force</span><span>How we work</span></p>
+      <p class="folio reveal"><span>Elite Force</span><span>How we work</span><span class="folio-num">05</span></p>
       <div class="section-head">
         <h2 id="process-title" class="reveal">How an engagement works</h2>
         <p class="lead reveal" style="--d:1">The same careful sequence whether you need a protection team next week or want to recover a debt that has been outstanding for years.</p>
@@ -318,7 +336,7 @@
   <!-- Coverage -->
   <section class="spread coverage" id="coverage" aria-labelledby="coverage-title">
     <div class="wrap">
-      <p class="folio reveal"><span>Elite Force</span><span>Coverage</span></p>
+      <p class="folio reveal"><span>Elite Force</span><span>Coverage</span><span class="folio-num">06</span></p>
       <div class="section-head">
         <h2 id="coverage-title" class="reveal">Across the whole of the United Kingdom</h2>
         <p class="lead reveal" style="--d:1">Private security and debt recovery nationwide, with teams deployed wherever our clients live, work and travel.</p>
@@ -335,7 +353,7 @@
   <!-- FAQ -->
   <section class="spread faq-wrap dark" id="faq" aria-labelledby="faq-title">
     <div class="wrap">
-      <p class="folio reveal"><span>Elite Force</span><span>Questions</span></p>
+      <p class="folio reveal"><span>Elite Force</span><span>Questions</span><span class="folio-num">07</span></p>
       <div class="faq-grid">
         <h2 id="faq-title" class="reveal">Questions clients ask</h2>
         <div class="faq reveal" style="--d:1">
@@ -351,10 +369,22 @@
     </div>
   </section>
 
+  <!-- Why there are no client names -->
+  <section class="notice" aria-labelledby="notice-title">
+    <div class="wrap notice-inner">
+      <h2 id="notice-title" class="reveal">Why you will not find client names on this website</h2>
+      <div class="reveal" style="--d:1">
+        <p><strong>Discretion is the service.</strong></p>
+        <p>We do not publish client names, photographs, case studies or testimonials, and we do not confirm who we work for. Most of our work arrives by private recommendation from people who have never been named here, and that is exactly how it should be.</p>
+        <p>If you want reassurance before you instruct us, ask for it. A director will talk through comparable work in general terms, sign a non-disclosure agreement first, and arrange a reference where a client has agreed to give one.</p>
+      </div>
+    </div>
+  </section>
+
   <!-- Enquire -->
   <section class="spread enquire" id="enquire" aria-labelledby="enquire-title">
     <div class="wrap">
-      <p class="folio reveal"><span>Elite Force</span><span>Private consultation</span></p>
+      <p class="folio reveal"><span>Elite Force</span><span>Private consultation</span><span class="folio-num">08</span></p>
       <div class="enquire-grid">
         <div>
           <h2 id="enquire-title" class="reveal">Request a private consultation</h2>

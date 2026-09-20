@@ -4,13 +4,16 @@ Private security and debt recovery site for Elite Force, live at https://elitefo
 Intellectual property of Sidedoor Digital.
 
 ## Structure
-- `index.html` Single-page brochure site. Cover (brand poster with foil sweep), motto band, then spreads: introduction, protection, collection, standard, process, coverage, questions, enquiry
+- `index.html` Single-page brochure site. Cover (scene plate with the crest laid over it and a foil sweep), credential rail, motto band, then spreads: introduction, protection, collection, standard, process, coverage, questions, discretion notice, enquiry
 - `privacy.html` Privacy notice (served at /privacy)
 - `digital-suite.html` Private Client Suite proposal. Unlinked, noindex. Share the direct link only.
 - `404.html` Not found page
 - `assets/brochure.css` Homepage styles. `assets/site.css` styles the other pages
 - `assets/site.js` Loaded in the head. Adds the `js` class, then runs reveals, header, menu, swipe decks, FAQ and the enquiry form. The form builds a WhatsApp message and opens WhatsApp; nothing is sent to or stored by the site
-- `assets/hero.webp` (2560w), `hero-1600.webp`, `hero-mobile.webp` and the `panel-*.webp` plates are all cut from one 4x super-resolved master of the brand poster, so crops stay sharp on retina screens
+- `assets/hero.webp` (2560w), `hero-1600.webp`, `hero-1024.webp`, `hero-mobile.webp` and the `panel-*.webp` plates are all cut from one clean scene photograph, upscaled and lightly graded, so crops stay sharp on retina screens
+- `assets/crest-hero.webp` (1100w) and `crest-hero-620.webp` are the crest keyed off its background with transparency. The cover lays it over the panelled door as its own element, so it stays sharp and the `.foil` sweep is masked to the crest outline rather than to a circle
+- `assets/wordmark.webp` and `wordmark.png` are the name set in Cinzel with a foil gradient rather than a cutout of the logo artwork, so it stays crisp at any size
+- Three typefaces, all self-hosted in `assets/fonts`. Cinzel is the brand voice and matches the lettering in the crest (wordmark, motto, folio lines, large section names, pillar names, phone number). Cormorant Garamond does the writing (headings, statements, questions). Archivo does body copy, navigation, buttons and forms
 - `favicon.ico`, `assets/favicon-32.png`, `icon-192.png`, `icon-512.png`, `icon-maskable-512.png`, `apple-touch-icon.png` are the lion crest
 - `assets/og-image.jpg` 1200 x 630 social card with the full crest
 - `_headers` Security headers and cache rules for Cloudflare Pages
@@ -21,6 +24,12 @@ Intellectual property of Sidedoor Digital.
 - Favicon, app icons and social image match the crest
 - All contact runs through WhatsApp and calls on +44 7348 131285. No email address, no database, no backend
 - Fonts self-hosted on every page and the content security policy fixed to allow them
+- Imagery recut from a clean scene plate, so no text or crest is baked into a photograph
+- Palette moved off flat neutral grey: warm ink black, a deep green-black band echoing the crest plaque, deeper gold, and fine grain across the page so it reads like print
+
+## When pushing this update
+Delete the five font files that are no longer referenced, or they sit in the repo unused:
+`assets/fonts/cinzel-latin-500-normal.woff2`, `cinzel-latin-700-normal.woff2`, `hanken-grotesk-latin-400-normal.woff2`, `hanken-grotesk-latin-500-normal.woff2`, `hanken-grotesk-latin-600-normal.woff2`.
 
 ## Still to do (needs access or client input)
 1. Cloudflare Pages: add `eliteforce.site` as a custom domain on the project.

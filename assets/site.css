@@ -1,25 +1,31 @@
 /* Elite Force | Intellectual property of Sidedoor Digital. */
 
-@font-face { font-family: "Cinzel"; font-style: normal; font-weight: 500; font-display: swap; src: url("/assets/fonts/cinzel-latin-500-normal.woff2") format("woff2"); }
-@font-face { font-family: "Cinzel"; font-style: normal; font-weight: 700; font-display: swap; src: url("/assets/fonts/cinzel-latin-700-normal.woff2") format("woff2"); }
-@font-face { font-family: "Hanken Grotesk"; font-style: normal; font-weight: 400; font-display: swap; src: url("/assets/fonts/hanken-grotesk-latin-400-normal.woff2") format("woff2"); }
-@font-face { font-family: "Hanken Grotesk"; font-style: normal; font-weight: 500; font-display: swap; src: url("/assets/fonts/hanken-grotesk-latin-500-normal.woff2") format("woff2"); }
-@font-face { font-family: "Hanken Grotesk"; font-style: normal; font-weight: 600; font-display: swap; src: url("/assets/fonts/hanken-grotesk-latin-600-normal.woff2") format("woff2"); }
+@font-face { font-family: "Cinzel"; font-style: normal; font-weight: 400; font-display: swap; src: url("/assets/fonts/cinzel-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "Cinzel"; font-style: normal; font-weight: 600; font-display: swap; src: url("/assets/fonts/cinzel-latin-600-normal.woff2") format("woff2"); }
+@font-face { font-family: "Cormorant Garamond"; font-style: normal; font-weight: 400; font-display: swap; src: url("/assets/fonts/cormorant-garamond-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 400; font-display: swap; src: url("/assets/fonts/cormorant-garamond-latin-400-italic.woff2") format("woff2"); }
+@font-face { font-family: "Cormorant Garamond"; font-style: normal; font-weight: 500; font-display: swap; src: url("/assets/fonts/cormorant-garamond-latin-500-normal.woff2") format("woff2"); }
+@font-face { font-family: "Cormorant Garamond"; font-style: normal; font-weight: 600; font-display: swap; src: url("/assets/fonts/cormorant-garamond-latin-600-normal.woff2") format("woff2"); }
+@font-face { font-family: "Archivo"; font-style: normal; font-weight: 400; font-display: swap; src: url("/assets/fonts/archivo-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "Archivo"; font-style: normal; font-weight: 500; font-display: swap; src: url("/assets/fonts/archivo-latin-500-normal.woff2") format("woff2"); }
+@font-face { font-family: "Archivo"; font-style: normal; font-weight: 600; font-display: swap; src: url("/assets/fonts/archivo-latin-600-normal.woff2") format("woff2"); }
 
 :root {
-  --black: #050505;
-  --vault: #11100d;
-  --vault-2: #1a1813;
-  --gold: #b9975b;
-  --gold-light: #e2cb96;
-  --gold-deep: #8a6c3a;
-  --ivory: #efe8da;
-  --stone: #a39b8c;
-  --line: rgba(185, 151, 91, 0.24);
-  --line-soft: rgba(239, 232, 218, 0.08);
+  --black: #050403;
+  --vault: #100d09;
+  --vault-2: #171310;
+  --jade: #080c0a;
+  --gold: #bb9450;
+  --gold-light: #ecd9ac;
+  --gold-deep: #6f5429;
+  --ivory: #f2ede3;
+  --stone: #9c9488;
+  --line: rgba(187, 148, 80, 0.28);
+  --line-soft: rgba(242, 237, 227, 0.085);
 
-  --display: "Cinzel", "Trajan Pro", "Times New Roman", serif;
-  --body: "Hanken Grotesk", "Helvetica Neue", Arial, sans-serif;
+  --brand: "Cinzel", "Trajan Pro", "Times New Roman", serif;
+  --display: "Cormorant Garamond", "Times New Roman", Georgia, serif;
+  --body: "Archivo", "Helvetica Neue", Arial, sans-serif;
 
   --wrap: 1180px;
   --gutter: clamp(20px, 4vw, 48px);
@@ -62,10 +68,10 @@ a:hover { color: var(--ivory); }
 .wrap { width: 100%; max-width: var(--wrap); margin: 0 auto; padding: 0 var(--gutter); }
 
 /* Type scale: 17 / 20 / 26 / 36 / 52 / 76 */
-h1, h2, h3 { font-family: var(--display); font-weight: 500; margin: 0; letter-spacing: 0.01em; color: var(--ivory); }
-h1 { font-size: clamp(36px, 5.2vw, 64px); line-height: 1.08; }
-h2 { font-size: clamp(30px, 3.6vw, 48px); line-height: 1.12; }
-h3 { font-size: clamp(21px, 1.8vw, 26px); line-height: 1.25; }
+h1, h2 { font-family: var(--display); font-weight: 500; margin: 0; letter-spacing: 0.005em; color: var(--ivory); }
+h1 { font-size: clamp(42px, 6vw, 74px); line-height: 1.04; }
+h2 { font-size: clamp(34px, 4.2vw, 56px); line-height: 1.08; }
+h3 { font-family: var(--brand); font-weight: 400; margin: 0; font-size: clamp(16px, 1.25vw, 18px); line-height: 1.35; color: var(--ivory); letter-spacing: 0.07em; text-transform: uppercase; }
 p { margin: 0 0 1em; max-width: 64ch; }
 .lead { font-size: clamp(18px, 1.5vw, 20px); color: var(--stone); line-height: 1.7; }
 
