@@ -500,8 +500,7 @@ p { margin: 0 0 1em; max-width: 64ch; }
   .form { grid-template-columns: 1fr; padding: 24px 18px; gap: 18px; }
   .form .btn[type="submit"] { width: 100%; }
   .wa-card { padding: 26px 20px; }
-  .wa-card .btn-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-  .wa-card .btn-row .btn:first-child { grid-column: 1 / -1; }
+  .wa-card .btn-row { display: grid; grid-template-columns: 1.5fr 1fr; gap: 10px; }
   .wa-card .btn { padding: 0 8px; font-size: 14px; gap: 8px; }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 36px 24px; }
   .footer-crest { margin-bottom: 48px; }

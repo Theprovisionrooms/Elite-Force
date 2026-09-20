@@ -131,44 +131,39 @@ document.addEventListener('DOMContentLoaded', function () {
   var year = document.getElementById('year');
   if (year) year.textContent = new Date().getFullYear();
 
-  /* Enquiry form */
+  /* Enquiry form: builds a WhatsApp message on the device and opens WhatsApp. Nothing is sent to this website. */
   var form = document.getElementById('enquiry-form');
   if (!form) return;
   var status = document.getElementById('form-status');
-  var ts = document.getElementById('f-ts');
-  if (ts) ts.value = String(Date.now());
-
-  function say(msg, ok) {
-    status.textContent = msg;
-    status.className = 'form-status ' + (ok ? 'is-ok' : 'is-error');
-  }
+  var NUMBER = '447348131285';
 
   form.addEventListener('submit', function (e) {
     e.preventDefault();
-    var data = Object.fromEntries(new FormData(form).entries());
+    var f = new FormData(form);
+    var name = String(f.get('name') || '').trim();
+    if (!name) {
+      status.textContent = 'Add your name so a director knows who they are speaking to.';
+      status.className = 'form-status is-error';
+      form.name.focus();
+      return;
+    }
+    var org = String(f.get('organisation') || '').trim();
+    var msg = String(f.get('message') || '').trim();
+    var lines = [
+      'Hello Elite Force, I would like to make a private enquiry.',
+      '',
+      'Name: ' + name
+    ];
+    if (org) lines.push('Organisation: ' + org);
+    lines.push('Help with: ' + f.get('service'));
+    lines.push('Please reply by: ' + f.get('preferred_contact'));
+    lines.push('Best time: ' + f.get('best_time'));
+    if (msg) { lines.push(''); lines.push(msg); }
 
-    if (!data.name || !data.name.trim()) { say('Add your name so a director knows who to contact.'); form.name.focus(); return; }
-    if (!data.email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)) { say('Enter a valid email address.'); form.email.focus(); return; }
-    if (!data.consent) { say('Tick the consent box so we can reply to you.'); return; }
-
-    var btn = form.querySelector('button[type="submit"]');
-    btn.disabled = true;
-    btn.textContent = 'Sending';
-
-    fetch(form.action, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(data)
-    }).then(function (res) {
-      if (!res.ok) throw new Error('bad status');
-      form.reset();
-      if (ts) ts.value = String(Date.now());
-      say('Enquiry sent. A director will contact you within one working day.', true);
-      btn.textContent = 'Sent';
-    }).catch(function () {
-      say('Your enquiry did not send. Check your connection and try again, or message us on WhatsApp.');
-      btn.disabled = false;
-      btn.textContent = 'Send enquiry';
-    });
+    var url = 'https://wa.me/' + NUMBER + '?text=' + encodeURIComponent(lines.join('\n'));
+    var win = window.open(url, '_blank');
+    if (win) win.opener = null; else window.location.href = url;
+    status.textContent = 'WhatsApp is open with your message. Press send there and a director will reply.';
+    status.className = 'form-status is-ok';
   });
 });
