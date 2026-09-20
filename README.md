@@ -27,10 +27,6 @@ Intellectual property of Sidedoor Digital.
 - Imagery recut from a clean scene plate, so no text or crest is baked into a photograph
 - Palette moved off flat neutral grey: warm ink black, a deep green-black band echoing the crest plaque, deeper gold, and fine grain across the page so it reads like print
 
-## When pushing this update
-Delete the five font files that are no longer referenced, or they sit in the repo unused:
-`assets/fonts/cinzel-latin-500-normal.woff2`, `cinzel-latin-700-normal.woff2`, `hanken-grotesk-latin-400-normal.woff2`, `hanken-grotesk-latin-500-normal.woff2`, `hanken-grotesk-latin-600-normal.woff2`.
-
 ## Still to do (needs access or client input)
 1. Cloudflare Pages: add `eliteforce.site` as a custom domain on the project.
 2. Client to supply: registered company name, number, registered office and ICO number for the footer and privacy notice.
